@@ -32,15 +32,13 @@ Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dön�
 | Package | Proje organizasyonu |
 | abapGit | GitHub ile versiyon kontrolü |
 
-🔒 Lock Object
+## 🔒 Kullanılan SAP Nesneleri
 
-Bu projede rezervasyon iptal işlemi sırasında veri bütünlüğünü korumak amacıyla Lock Object kullanılmıştır. İşlem başlamadan önce ilgili rezervasyon kaydı kilitlenmekte (ENQUEUE), güncelleme tamamlandıktan sonra kilit kaldırılmaktadır (DEQUEUE). Böylece aynı kaydın birden fazla kullanıcı tarafından eş zamanlı olarak değiştirilmesi engellenmektedir.
-
-Kullanılan SAP Nesneleri
-Nesne	Açıklama
-Lock Object (EZSBOOK)	Rezervasyon kaydını işlem süresince kilitleyerek veri tutarlılığını sağlar.
-ENQUEUE Function Module	İşlem öncesinde kaydı kilitler.
-DEQUEUE Function Module	İşlem tamamlandıktan sonra kilidi kaldırır.
+| Nesne | Açıklama |
+|---|---|
+| `EZSBOOK` | Rezervasyon kaydını işlem süresince kilitleyerek veri tutarlılığını sağlar |
+| `ENQUEUE` Function Module | Güncelleme öncesinde ilgili rezervasyon kaydını kilitler |
+| `DEQUEUE` Function Module | İşlem tamamlandıktan sonra ilgili kaydın kilidini kaldırır |
 ## 🎯 Proje Kapsamında Kazanılan Yetkinlikler
 
 | Konu | Açıklama |
@@ -53,6 +51,22 @@ DEQUEUE Function Module	İşlem tamamlandıktan sonra kilidi kaldırır.
 | Lock Object | Eş zamanlı güncellemelerde veri bütünlüğünü koruma |
 | Package Yapısı | SAP geliştirme nesnelerini ana ve alt package yapısıyla düzenleme |
 | abapGit | SAP nesnelerini GitHub üzerinden versiyon kontrolüne alma |
+
+Uçuş fiyatlarının farklı para birimlerine dönüştürülmesi amacıyla
+`Z_CONVERT_FLIGHT_PRICE` isimli özel Function Module geliştirilmiştir.
+
+Fonksiyon; orijinal fiyat, kaynak para birimi, hedef para birimi ve kur tarihi
+bilgilerini parametre olarak almaktadır. Para birimi dönüşüm işlemi sırasında
+SAP standart fonksiyonlarından `CONVERT_TO_LOCAL_CURRENCY` kullanılmaktadır.
+
+### Kullanılan Function Module'ler
+
+| Function Module | Tür | Açıklama |
+|---|---|---|
+| `Z_CONVERT_FLIGHT_PRICE` | Özel geliştirme | Uçuş fiyatının kaynak para biriminden hedef para birimine dönüştürülmesini yönetir |
+| `CONVERT_TO_LOCAL_CURRENCY` | SAP standart | Belirtilen tarih ve döviz kuru bilgisine göre tutarı yerel para birimine dönüştürür |
+
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/cfeb2d35-533e-4152-a72e-331e53ae8e99" />
 
 👨‍💻 Geliştirici	- Nursena Çamkömürü
 🎓 Staj Kurumu	- Akedaş Elektrik Dağıtım A.Ş.
