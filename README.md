@@ -1,18 +1,48 @@
 # SAP ABAP Internship Learning Project
 
 ## 📌 Projenin Amacı
+## Uçuş ALV Raporu
+Bu ekran, SCARR, SPFLI, SFLIGHT ve SBOOK tablolarından alınan verilerin
+SALV ALV üzerinde raporlanmasını göstermektedir.
+<img width="700" height="350" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
 
-Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dönüştürülmesi amacıyla geliştirilmiştir. Çalışma kapsamında SAP'nin temel geliştirme bileşenleri kullanılarak gerçek bir iş senaryosu üzerinde raporlama, veri işleme ve rezervasyon yönetimi uygulamaları geliştirilmiştir.
+## 📋 Proje Özeti
+
+| Özellik | Açıklama |
+|---------|----------|
+| 🎓 Staj | SAP ABAP Internship |
+| 💻 Geliştirme Dili | ABAP |
+| 🖥️ Geliştirme Ortamı | SAP NetWeaver AS ABAP Developer Edition |
+| 🛫 Senaryo | Flight Management (SCARR, SPFLI, SFLIGHT, SBOOK) |
+| 📦 Versiyon Kontrol | abapGit + GitHub |
+| 📅 Geliştirme Süresi | Staj Dönemi |
+
+## 🛠️ Kullanılan SAP Teknolojileri
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| Open SQL | Veri sorgulama ve JOIN işlemleri |
+| SALV ALV | Rapor ekranlarının oluşturulması |
+| Function Module | İş mantığının modüler hale getirilmesi |
+| Lock Object | Eş zamanlı veri güncellemelerinin kontrolü |
+| Package | Proje organizasyonu |
+| abapGit | GitHub ile versiyon kontrolü |
+
+## 🎯 Proje Kapsamında Kazanılan Yetkinlikler
+
+| Konu | Açıklama |
+
+| Open SQL | Birden fazla SAP tablosundan veri çekme ve JOIN işlemleri gerçekleştirme |
+| SALV ALV | Filtrelenebilir ve kullanıcı dostu raporlama ekranları oluşturma |
+| Function Module | Tekrar kullanılabilir iş mantıkları geliştirme |
+| Para Birimi Dönüşümü | Uçuş fiyatlarını farklı para birimlerine çevirme |
+| Rezervasyon Yönetimi | Rezervasyon iptal ve veri güncelleme süreçlerini yönetme |
+| Lock Object | Eş zamanlı güncellemelerde veri bütünlüğünü koruma |
+| Package Yapısı | SAP geliştirme nesnelerini ana ve alt package yapısıyla düzenleme |
+| abapGit | SAP nesnelerini GitHub üzerinden versiyon kontrolüne alma |
+
+👨‍💻 Geliştirici	- Nursena Çamkömürü
+🎓 Staj Kurumu	- Akedaş Elektrik Dağıtım A.Ş.
+📚 Konu	 -SAP ABAP
 
 
-<img width="500" height="350" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
-<img width="500" height="350" alt="Ekran görüntüsü 2026-08-03 101346" src="https://github.com/user-attachments/assets/20f79c2e-64bf-43ea-a5c8-78bf6deb7f2d" />
-
- Open SQL kullanarak birden fazla SAP tablosundan veri çekmek ve JOIN işlemleri gerçekleştirmek.
-- SALV ALV kullanarak kullanıcı dostu raporlama ekranları oluşturmak.
-- Function Module geliştirerek tekrar kullanılabilir iş mantıkları oluşturmak.
-- Döviz kuru kullanarak para birimi dönüştürme işlemlerini gerçekleştirmek.
-- Rezervasyon iptal süreçlerini geliştirerek veri güncelleme işlemlerini yönetmek.
-- Lock Object kullanarak eş zamanlı veri güncellemelerinde veri bütünlüğünü sağlamak.
-- SAP geliştirme nesnelerini package yapısı altında düzenlemek.
-- abapGit kullanarak projeyi GitHub üzerinde versiyon kontrolüne almak.
