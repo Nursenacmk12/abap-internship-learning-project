@@ -2,9 +2,9 @@
 
 ## 📌 Projenin Amacı
 
-Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dönüştürülmesi amacıyla geliştirilmiştir. Çalışma kapsamında SAP'nin temel geliştirme bileşenleri kullanılarak gerçek bir iş senaryosu üzerinde raporlama, veri işleme ve rezervasyon yönetimi uygulamaları geliştirilmiştir.<img width="1914" height="994" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
+Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dönüştürülmesi amacıyla geliştirilmiştir. Çalışma kapsamında SAP'nin temel geliştirme bileşenleri kullanılarak gerçek bir iş senaryosu üzerinde raporlama, veri işleme ve rezervasyon yönetimi uygulamaları geliştirilmiştir.<img width="500" height="500" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
 
-<img width="1659" height="817" alt="Ekran görüntüsü 2026-08-03 101346" src="https://github.com/user-attachments/assets/20f79c2e-64bf-43ea-a5c8-78bf6deb7f2d" />
+<img width="500" height="500" alt="Ekran görüntüsü 2026-08-03 101346" src="https://github.com/user-attachments/assets/20f79c2e-64bf-43ea-a5c8-78bf6deb7f2d" />
 
  Open SQL kullanarak birden fazla SAP tablosundan veri çekmek ve JOIN işlemleri gerçekleştirmek.
 - SALV ALV kullanarak kullanıcı dostu raporlama ekranları oluşturmak.
