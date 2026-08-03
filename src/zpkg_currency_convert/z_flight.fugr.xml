@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Flight table</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZ_FLIGHTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ_FLIGHT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CANCEL_PASSENGER_BOOKING</FUNCNAME>
+     <SHORT_TEXT>SBOOK rezervasyon kaydı kilidi</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_HAVAYOLU_KOD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SBOOK-CARRID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_BAGLANTI_NO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SBOOK-CONNID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UCUS_TARIH</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SBOOK-FLDATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_REZERVASYON_NUMARASI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SBOOK-BOOKID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_SUCCESS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR5</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_STATUS_TEXT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR20</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>BOOKING_NOT_FOUND</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>RECORD_LOCKED</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>UPDATE_FAILED</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>ALREADY_CANCELLED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_HAVAYOLU_KOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Airline Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_BAGLANTI_NO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight Connection Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UCUS_TARIH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_REZERVASYON_NUMARASI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Booking number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SUCCESS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_STATUS_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BOOKING_NOT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RECORD_LOCKED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>UPDATE_FAILED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ALREADY_CANCELLED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_CONVERT_FLIGHT_PRICE</FUNCNAME>
+     <SHORT_TEXT>para birimi çevirme</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_ORIJINAL_FIYAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SFLIGHT-PAYMENTSUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ORIJINAL_BIRIM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SFLIGHT-CURRENCY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HEDEF_PARA_BIRIMI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SFLIGHT-CURRENCY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_KUR_TARIHI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SFLIGHT-FLDATE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_CEVRILMIS_FIYAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SFLIGHT-PAYMENTSUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>TARIHTE_KUR_BULUNAMADI</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>PARA_BIRIMI_BULUNAMADI</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_ORIJINAL_FIYAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Aircraft Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ORIJINAL_BIRIM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Local currency of airline</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HEDEF_PARA_BIRIMI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Local currency of airline</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_KUR_TARIHI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_CEVRILMIS_FIYAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Aircraft Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TARIHTE_KUR_BULUNAMADI</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>tarihte kur  bulunamadı</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PARA_BIRIMI_BULUNAMADI</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>para birimi bulunamadı</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
