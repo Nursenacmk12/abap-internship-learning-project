@@ -71,6 +71,18 @@ SAP standart fonksiyonlarından `CONVERT_TO_LOCAL_CURRENCY` kullanılmaktadır.
 
 <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/cfeb2d35-533e-4152-a72e-331e53ae8e99" />
 
+## 📄 Excel'e Aktarma
+
+Geliştirilen SALV ALV raporu, SAP'nin standart dışa aktarma (Export) özelliğini desteklemektedir. Kullanıcılar rapor sonuçlarını tek tıklama ile Microsoft Excel formatına aktararak analiz, paylaşım ve raporlama işlemlerini kolaylıkla gerçekleştirebilmektedir.
+
+Bu özellik, ALV nesnesi üzerinden standart fonksiyonların aktif edilmesi ile sağlanmıştır.
+DATA(lo_functions) = lo_alv->get_functions( ).
+lo_functions->set_all( abap_true )
+Yukarıdaki kod ile SALV ALV'nin tüm standart fonksiyonları (Excel'e Aktarma, Yazdırma, Filtreleme, Sıralama, Toplam Alma vb.) aktif hale getirilmiştir.
+
+
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/957b62c2-879c-4a3c-8daf-840f623a0ad9" />
+
 👨‍💻 Geliştirici	- Nursena Çamkömürü
 🎓 Staj Kurumu	- Akedaş Elektrik Dağıtım A.Ş.
 📚 Konu	 -SAP ABAP
