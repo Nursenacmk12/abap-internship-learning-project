@@ -6,8 +6,12 @@ Bu ekran, SCARR, SPFLI, SFLIGHT ve SBOOK tablolarından alınan verilerin
 SALV ALV üzerinde raporlanmasını göstermektedir.
 
 <img width="600" height="300" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
-## 📋 Proje Özeti
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/3048dba6-f04e-45bb-b0b7-e5d30f9bbae4" />
 
+
+Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dönüştürülmesi amacıyla geliştirilmiştir. Projede kullanıcıların havayolu şirketi, bağlantı numarası, kalkış/varış noktaları ve uçuş tarihi gibi kriterlere göre sorgulama yapabilmesini sağlayan Selection Screen, Open SQL ile geliştirilen ALV raporu, döviz kuru ile para birimi dönüştürme ve rezervasyon iptal işlemleri yer almaktadır.
+
+## 📋 Proje Özeti
 | Özellik | Açıklama |
 |---------|----------|
 | 🎓 Staj | SAP ABAP Internship |
