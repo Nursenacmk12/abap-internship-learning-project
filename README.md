@@ -41,17 +41,20 @@ Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dön�
 | `DEQUEUE` Function Module | İşlem tamamlandıktan sonra ilgili kaydın kilidini kaldırır |
 ## 🎯 Proje Kapsamında Kazanılan Yetkinlikler
 
-| Konu | Açıklama |
+## 🎯 Proje Kapsamında Kazanılan Yetkinlikler
 
-| Open SQL | Birden fazla SAP tablosundan veri çekme ve JOIN işlemleri gerçekleştirme |
+| Konu | Açıklama |
+|------|----------|
+| Open SQL | Birden fazla SAP tablosundan veri çekme ve JOIN işlemlerini gerçekleştirme |
 | SALV ALV | Filtrelenebilir ve kullanıcı dostu raporlama ekranları oluşturma |
 | Function Module | Tekrar kullanılabilir iş mantıkları geliştirme |
 | Para Birimi Dönüşümü | Uçuş fiyatlarını farklı para birimlerine çevirme |
 | Rezervasyon Yönetimi | Rezervasyon iptal ve veri güncelleme süreçlerini yönetme |
 | Lock Object | Eş zamanlı güncellemelerde veri bütünlüğünü koruma |
 | Package Yapısı | SAP geliştirme nesnelerini ana ve alt package yapısıyla düzenleme |
-| abapGit | SAP nesnelerini GitHub üzerinden versiyon kontrolüne alma |
+| abapGit | SAP nesnelerini GitHub üzerinde versiyon kontrolüne alma |
 
+## 💱 Kur Çevirme
 Uçuş fiyatlarının farklı para birimlerine dönüştürülmesi amacıyla
 `Z_CONVERT_FLIGHT_PRICE` isimli özel Function Module geliştirilmiştir.
 
