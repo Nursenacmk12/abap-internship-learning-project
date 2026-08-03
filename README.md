@@ -5,7 +5,7 @@
 Bu ekran, SCARR, SPFLI, SFLIGHT ve SBOOK tablolarından alınan verilerin
 SALV ALV üzerinde raporlanmasını göstermektedir.
 
-<img width="600" height="250" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
+<img width="600" height="300" alt="Ekran görüntüsü 2026-08-03 101356" src="https://github.com/user-attachments/assets/54892272-0d6d-4260-8b8d-7173859b6113" />
 ## 📋 Proje Özeti
 
 | Özellik | Açıklama |
