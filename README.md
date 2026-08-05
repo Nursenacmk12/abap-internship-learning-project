@@ -38,8 +38,7 @@ Bu proje, SAP ABAP stajı süresince edinilen teorik bilgilerin uygulamaya dön�
 |---|---|
 | `EZSBOOK` | Rezervasyon kaydını işlem süresince kilitleyerek veri tutarlılığını sağlar |
 | `ENQUEUE` Function Module | Güncelleme öncesinde ilgili rezervasyon kaydını kilitler |
-| `DEQUEUE` Function Module | İşlem tamamlandıktan sonra ilgili kaydın kilidini kaldırır |
-## 🎯 Proje Kapsamında Kazanılan Yetkinlikler
+| `DEQUEUE` Function Module | İşlem tamamlandıktan sonra ilgili kaydın kilidini kaldırır
 
 ## 🎯 Proje Kapsamında Kazanılan Yetkinlikler
 
